@@ -1,9 +1,0 @@
-resource "azurerm_application_security_group" "asg_mgmt" {
-  name                = "sb-mgmt-asg"
-  location            = "westus"
-  resource_group_name = "${var.resource_group_name}"
-
-  tags = {
-    asg = "asg_mgmt"
-  }
-}
