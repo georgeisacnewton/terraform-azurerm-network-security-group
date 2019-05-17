@@ -54,9 +54,9 @@ variable "destination_port_ranges" {
   type    = "list"
   default = ["*"]
 
-
 }
 
 variable "source_port_ranges" {
   type    = "list"
   default = ["*"]
+}
