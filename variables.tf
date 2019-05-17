@@ -1,6 +1,6 @@
 # Network Security Group definition
 variable "resource_group_name" {
-  default     = "nsg_rg"
+  #default     = "nsg_rg"
   description = "Name of the resource group"
 }
 
@@ -50,13 +50,13 @@ variable "destination_address_prefix" {
   # Example ["10.0.3.0/32","10.0.3.128/32"] or ["VirtualNetwork"] 
 }
 
-variable "destination_port_ranges" {
+variable "destination_port_range" {
   type    = "list"
   default = ["*"]
 
 }
 
-variable "source_port_ranges" {
+variable "source_port_range" {
   type    = "list"
   default = ["*"]
 }
