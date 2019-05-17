@@ -12,7 +12,7 @@ module "nsg" {
 
   custom_rules               = "${var.custom_rules}"
   source_address_prefix      = "${var.source_address_prefix}"
-  #destination_address_prefix = "${var.destination_address_prefix}"
+  destination_address_prefix = "${var.destination_address_prefix}"
   destination_application_security_group_ids = "${module.asg_bation.asg_id}"
   tags                       = "${var.tags}"
 }
